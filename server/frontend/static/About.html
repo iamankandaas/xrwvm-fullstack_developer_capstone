@@ -1,68 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Cars Dealership</title>
+
+    <!-- Link the stylesheets -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
+<body>
+
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Best Cars Dealership</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+    <!-- About Us Section -->
+    <div class="card" style="width: 80%; margin: auto; margin-top:5%; padding: 20px; text-align: center;">
+        <div class="banner" name="about-header">
+            <h1>About Us</h1>
+            <p>Welcome to <strong>Best Cars Dealership</strong>, your trusted partner in finding the perfect vehicle. 
+            We are dedicated to providing top-quality domestic and imported cars at competitive prices. 
+            With a commitment to excellence, our team ensures a seamless and satisfying car-buying experience for all customers.</p>
         </div>
-      </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <!-- Leadership Team Section -->
+        <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; margin:auto;">
+            <div class="card" style="width: 30%; text-align: center; padding: 15px;">
+                <img class="card-img-top" src="/static/ceo.png" alt="CEO Image">
+                <div class="card-body">
+                    <h4 class="title">John Doe</h4>
+                    <p>Chief Executive Officer</p>
+                    <p class="card-text">John has over 20 years of experience in the automobile industry, leading our team towards innovation and customer satisfaction.</p>
+                    <p>Email: john.doe@bestcars.com</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%; text-align: center; padding: 15px;">
+                <img class="card-img-top" src="/static/coo.png" alt="COO Image">
+                <div class="card-body">
+                    <h4 class="title">Jane Smith</h4>
+                    <p>Chief Operating Officer</p>
+                    <p class="card-text">Jane specializes in operational excellence, ensuring smooth dealership management and exceptional service delivery.</p>
+                    <p>Email: jane.smith@bestcars.com</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%; text-align: center; padding: 15px;">
+                <img class="card-img-top" src="/static/cfo.png" alt="CFO Image">
+                <div class="card-body">
+                    <h4 class="title">Michael Lee</h4>
+                    <p>Chief Financial Officer</p>
+                    <p class="card-text">Michael brings extensive financial expertise, keeping Best Cars Dealership financially strong and customer-focused.</p>
+                    <p>Email: michael.lee@bestcars.com</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    </div>
-    </div>
-    
+
 </div>
 
+</body>
 </html>
